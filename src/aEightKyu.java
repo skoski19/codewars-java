@@ -1,4 +1,4 @@
-public class Main {
+public class aEightKyu {
 
     public static void main(String[] args) {
 	// write your code here
