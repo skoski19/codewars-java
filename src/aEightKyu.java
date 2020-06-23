@@ -1,9 +1,13 @@
+import java.util.Scanner;
+
 public class aEightKyu {
 
     public static void main(String[] args) {
 
         System.out.println("HQ9: "+HQ9('Q'));
         System.out.println(HQ9('H'));
+        System.out.println(OddOrEven(3567));
+        System.out.println(OddOrEven(400));
 
     }
 
@@ -22,4 +26,16 @@ public class aEightKyu {
                 return null;
         }
     }
+
+    public static String OddOrEven(int num) {
+        if ( num % 2 == 0 )
+        {
+            return (num + " is Even");
+        }
+        else
+            {
+            return (num + " is Odd");
+            }
+    }
+
 }
