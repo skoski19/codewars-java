@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class aEightKyu {
@@ -8,6 +10,7 @@ public class aEightKyu {
         System.out.println(HQ9('H'));
         System.out.println(OddOrEven(3567));
         System.out.println(OddOrEven(400));
+        System.out.println(CreateList(3));
 
     }
 
@@ -36,6 +39,19 @@ public class aEightKyu {
             {
             return (num + " is Odd");
             }
+    }
+
+    public static List CreateList(int number)
+    {
+        List list = new ArrayList();
+
+        for(int count = 1; count <= number;)
+        {
+            list.add(count);
+            count++;
+        }
+
+        return list;
     }
 
 }
